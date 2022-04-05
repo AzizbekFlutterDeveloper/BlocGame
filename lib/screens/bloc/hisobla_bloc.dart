@@ -20,6 +20,7 @@ class HisoblaBloc extends Cubit<HisoblaState> {
 
   addRandom() {
     random.clear();
+    sorts.clear();
     for (var i = 0; i < 6; i++) {
       int vale = Random().nextInt(99);
       sort = 0;
@@ -60,7 +61,7 @@ class HisoblaBloc extends Cubit<HisoblaState> {
     } else {
       ontap = true;
       sort += 1;
-      appText = "Worng";
+      appText = "Wrong";
       appBarColor = Colors.red;
       contColor[index] = Colors.red;
       textColor[index] = Colors.white;
